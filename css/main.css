@@ -1851,6 +1851,42 @@ a.text-dark:hover {
   color: #868e96;
 }
 
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+tr.collapse.show {
+  display: table-row;
+}
+
+tbody.collapse.show {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
 .section {
   width: 100%;
 }
@@ -1986,6 +2022,30 @@ a:hover {
   font-size: 28px;
 }
 
+.about-us__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.map__container {
+  margin-top: 20px;
+}
+
+.shops__map {
+  max-width: 100%;
+  height: auto;
+}
+
 @-webkit-keyframes links {
   to {
     left: 0;
@@ -2069,6 +2129,121 @@ p {
   src: url("../fonts/Arimo/arimo-bolditalic-webfont.woff") format("woff"), url("../fonts/Arimo/arimo-bolditalic-webfont.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
+}
+
+.banners__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.banners__pic {
+  width: 100%;
+  max-height: 490px;
+}
+
+.banners__row {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.banners__row .banners__item {
+  margin-right: 5px;
+}
+
+.banners__row .banners__item:last-child {
+  margin-right: 0;
+}
+
+.cat__banner {
+  background-color: #e8e8e8;
+  position: relative;
+}
+
+.banner__block {
+  width: 50%;
+  padding: 90px 0;
+}
+
+.cat-banner__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cat-banner__text {
+  color: #858586;
+}
+
+.cat-banner__image {
+  position: absolute;
+  top: 50%;
+  right: 250px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-height: 400px;
+}
+
+.cat__filter {
+  max-width: 100%;
+  height: auto;
+}
+
+.cat__filters {
+  margin-top: 20px;
+}
+
+.cat__products {
+  border-top: 1px solid #858586;
+  border-bottom: 1px solid #858586;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cat__products .product__tizer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33%;
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
 }
 
 .footer {
@@ -2210,6 +2385,21 @@ p {
   margin: 0 10px;
 }
 
+.menu__item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  z-index: 9999999999999;
+  width: 1140px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  padding: 70px 50px;
+}
+
 .menu__link {
   position: relative;
   color: #263238;
@@ -2237,6 +2427,68 @@ p {
 .menu__link:hover:after {
   -webkit-animation: links .5s linear both;
   animation: links .5s linear both;
+}
+
+.menu__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.sub-menu__list {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+
+.sub-menu__link {
+  color: #a1c133;
+}
+
+.sub-menu__link:hover {
+  color: #858586;
+}
+
+.products__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.products__block .product__tizer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .product__card {
@@ -2447,6 +2699,61 @@ p {
   color: #858586;
 }
 
+.clinic__title {
+  width: 100%;
+  text-align: center;
+  color: #858586;
+}
+
+.clinic__title h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.accordion {
+  margin-top: 50px;
+  padding: 0 50px;
+  color: #858586;
+  list-style: disc;
+}
+
+.acco__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.acco__text {
+  padding: 30px;
+}
+
+.research__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.research__text {
+  padding-left: 10px;
+  color: #858586;
+}
+
+.research__title {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .tizers__content {
   padding: 30px 0;
 }
@@ -2519,6 +2826,11 @@ p {
 
 .tizer__title {
   text-align: center;
+}
+
+.tizer__price {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .slider__btn {
