@@ -1891,6 +1891,17 @@ tbody.collapse.show {
   width: 100%;
 }
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.flag__link {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 .section__content {
   background-color: #fff;
 }
@@ -2464,6 +2475,143 @@ p {
 
 .sub-menu__link:hover {
   color: #858586;
+}
+
+.info {
+  margin: 50px 0;
+}
+
+.main__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1A66AF;
+}
+
+.main__text {
+  color: #000;
+  line-height: 1.2;
+}
+
+.link__title {
+  color: #1a66af;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.link__title:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: #1a66af;
+}
+
+.link__title--second {
+  color: #9A4166;
+}
+
+.link__title--second:before {
+  background-color: #9A4166;
+}
+
+.link__title--third {
+  color: #302F2F;
+}
+
+.link__title--third:before {
+  background-color: #302F2F;
+}
+
+.link__title--fourth {
+  color: #6D482A;
+}
+
+.link__title--fourth:before {
+  background-color: #6D482A;
+}
+
+.link__subtitle {
+  display: inline-block;
+  margin: 10px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.main__link {
+  display: block;
+  width: 100%;
+  height: 511px;
+  position: relative;
+}
+
+.link__pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.link__pic--right {
+  right: initial;
+  left: 0;
+}
+
+.footer-main {
+  padding: 70px 0;
+  padding-bottom: 40px;
+}
+
+.footer-main__title {
+  color: #1a66af;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-main__title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background-color: #1a66af;
+}
+
+.footer-main__subtitle {
+  color: #000;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.footer-main__text {
+  position: relative;
+}
+
+.footer-main__text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: #1a66af;
+}
+
+.footer-main__link {
+  color: #000;
+  text-decoration: underline;
 }
 
 .products__block {
